@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Robotized EV Charging</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="waitResponse">
+    <span class="loader"></span>
+  </div>
+  <div>
+    <h1>Robotized EV Charging Control</h1>
+  </div>
+  <hr>
+  <div class="page" id="home">
+    <h3>Quick Commands</h3>
+    <p><button id="startCharging">Start Charging</button> <button id="stopCharging">Stop Charging</button></p>
+  </div>
+  <hr>
+  <div class="page" id="console">
+    <h3>Console</h3>
+    <p>Command: <input autocomplete="off" id="command" type="text" size="78" autocomplete="off" /><button
+        id="send">Send</button></p>
+    <p><textarea id="log" cols="100" rows="20"></textarea></p>
+    <p><button id="clear">Clear log</button> <label><input id="autoScroll" type="checkbox" checked="checked" /> Auto
+        scroll</label></p>
+  </div>
+  <hr>
+  <footer>Version: 0.1/18.10.2023 &copy; 2023</footer>
+  <script type="text/javascript" src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
