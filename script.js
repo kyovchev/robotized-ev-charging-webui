@@ -83,4 +83,8 @@ var savedCommand = '';
   document.getElementById('stopCharging').onclick = function() {
     sendCommand('stop');
   }
+
+  document.getElementById('getStatus').onclick = function() {
+    sendCommand('status');
+  }
 })();
